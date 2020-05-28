@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+		  href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+		  rel="stylesheet"
+		/>
+		<link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
+	
+		<title>Todo-list</title>
+		<link
+		  rel="stylesheet"
+		  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+		  integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+		  crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="/dist/prefixed/styles.css" />
+	</head>
+	<body>
+		<header>
+			<nav>
+			  <div class="brand"><i class="fas fa-eye"></i>&nbsp;Javascript-course-Library</div>
+			<ul>
+			  <li><a href="#home">Home</a></li>
+			  <li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Arrays</a>
+				<div class="dropdown-content">
+				  <a href="#map">Map</a>
+				  <a href="#find">Find</a>
+				  <a href="#filter">Filter</a>
+				  <a href="#some&every">Some & Every</a>
+				  <a href="#">Turnary Operators</a>
+				  <a href="#">Arrow Fn</a>
+				  <a href="#">Weired</a>
+				</div>
+				<li><a href="#news">About</a></li>
+			  </li>
+			</ul>
+		  </nav>
+		  </header>
+		  <main>
+			<!-- homesection -->
+			<a name="home"></a>
+			<div class="one-two">
+			  <div class="form-container">
+				<div class="left">
+				  <h1>TO-DO app with Javascript</h1>
+				</div>
+				<form action="">
+				  <input type="text" class="todo-input" />
+				  <button class="todo-button" type="submit">
+					<i class="fas fa-plus-square"></i>
+				  </button>
+				  <div class="select">
+					<select name="todos" class="filter-todo">
+					  <option value="all">All</option>
+					  <option value="completed">completed</option>
+					  <option value="incompleted">incompleted</option>
+					</select>
+				  </div>
+				</form>
+			  </div>
+			  <div class="todo-container">
+				<div class="resetbtn">
+				  <button class="clear-all">Clear All</button>
+				</div>
+				<ul class="todo-list"></ul>
+			  </div>
+			</div>
+			   <!-- Map=section -->
+			   <a name="map"></a>
+			   <section class="container">
+				 <h1 class="section-header"> I am Map section</h1>
+			   </section>
+			   <!-- Find=section -->
+			   <a name="find"></a>
+			   <section class="container">
+				 <h1 class="section-header"> I am Find section</h1>
+			   </section>
+			   <!-- Find=section -->
+			   <a name="filter"></a>
+			   <section class="container">
+				 <h1 class="section-header"> I am Filter section</h1>
+			   </section>
+			   <!-- Some&Every=section-header -->
+			   <a name="some&every"></a>
+			   <section class="container">
+				 <h1 class="section-header"> I am some&every section</h1>
+			   </section>
+		</main>
+
+		<!--JS-->
+		<script src="./js/index.js"></script>
+	</body>
+</html>

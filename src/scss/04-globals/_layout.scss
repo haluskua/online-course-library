@@ -1,0 +1,167 @@
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.one-two {
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2rem;
+  overflow: auto;
+}
+.form-container {
+  width: 40vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+form button {
+  color: #d88771;
+  background: white;
+  cursor: pointer;
+  transition: all -0.3s ease;
+}
+
+form button:hover {
+  background: #d88771;
+  color: white;
+}
+
+.todo-container {
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo {
+  margin: 0.5rem;
+  background: white;
+  color: black;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.6s ease;
+}
+.todo-input {
+  padding: 1rem;
+}
+
+.todo li {
+  flex: 1;
+  padding-left: 11px;
+}
+
+.trash-btn,
+.complete-btn {
+  background: #ff6f47;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.complete-btn {
+  background: green;
+}
+
+.todo-Item {
+  padding: 0rem 0.5rem;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+}
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+select {
+  color: #ff6f47;
+  width: 10rem;
+  cursor: pointer;
+  padding: 1rem;
+}
+.select::after {
+  content: "\25bc";
+  position: absolute;
+  background: #ff6f47;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  pointer-events: none;
+  transition: all 0.4s ease;
+}
+
+.select:hover::after {
+  background: rgb(223, 214, 214);
+  color: #ff6f47;
+}
+
+.resetbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.clear-all {
+  background: none;
+  color: white;
+  padding: 9px;
+  border-radius: 3px;
+  width: 100%;
+  height: 100%;
+}
+.clear-all:hover {
+  background: white;
+  color: green;
+  cursor: pointer;
+}
+
+/* -----------Map-begins------------------ */
+
+.container {
+  margin-top: 4rem;
+  height: 100vh;
+  overflow: auto;
+  border-top: 1px solid #333c3e;
+  .section-header {
+    font-family: "Megrim", cursive;
+    color: #d9ff8a;
+  }
+}
+
+
+/* -----------Map-ends------------------ */
