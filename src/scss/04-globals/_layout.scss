@@ -11,7 +11,7 @@ main {
   display: flex;
   justify-content: space-between;
   padding-left: 2rem;
-  overflow: auto;
+  overflow-y: auto;
 }
 .form-container {
   width: 40vw;
@@ -154,13 +154,19 @@ select {
 
 .container {
   margin-top: 4rem;
-  height: 100vh;
-  overflow: auto;
+  height: 100%;
   border-top: 1px solid #333c3e;
+  position: relative;
   .section-header {
     font-family: "Megrim", cursive;
     color: #d9ff8a;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    background-color: ($color1);
   }
+
 }
 
 

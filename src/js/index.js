@@ -122,7 +122,7 @@ function saveLocalTodos(todo) {
 }
 
 function getTodos() {
-    console.log('hello')
+    // console.log('hello')
   //CHECK --- do i already have thing in there?
   let todos;
   if (localStorage.getItem("todos") === null) {

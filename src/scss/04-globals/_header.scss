@@ -5,13 +5,14 @@ header {
     width: 100vw;
     display: flex;
     justify-content: space-between;
-    background: #557e8a;
+	background: ($color1);
+	// background: @include $primary-color;
     /* background: url(images/matrix.jpg) center top;
 	background-size: cover; */
     align-items: center;
     margin: 0;
     padding: 0;
-    padding-left: 2rem;
+    padding: 0 3rem;
     position: fixed;
     top: 0;
     z-index: 9999;
@@ -29,7 +30,7 @@ header {
     li a,
     .dropbtn {
       display: inline-block;
-      color: white;
+      color: ($white);
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
@@ -40,25 +41,26 @@ header {
       display: none;
     }
 
-    .dropdown-content a:hover {
-      color: red;
+    .dropdown-content a {
+      color: ($red);
       font-weight: bold;
     }
 
     li a:hover,
     .dropdown:hover .dropbtn {
-      background-color: red;
+      background-color: ($red);
     }
 
     li.dropdown {
       display: inline-block;
     }
     .dropdown-content {
-      perspective: 1000px;
+	  perspective: 1000px;
+
       //sass-Anima
       a {
-        background-color: rgb(187, 197, 175);
-        color: white;
+        background-color: rgb(243, 250, 234);
+        color: ($dark);
         padding: 12px 16px;
         text-decoration: none;
         display: block;
@@ -69,7 +71,7 @@ header {
           &:nth-child(#{$i}) {
             animation: {
               name: menu1;
-              duration: 300ms * $i;
+              duration: 100ms * $i;
               timing-function: ease-in-out;
               fill-mode: forwards;
             }
@@ -92,14 +94,15 @@ header {
     .dropdown-content {
       display: none;
       position: absolute;
-      background-color: #f9f9f9;
+      background-color: ($white);
       min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	  background-color: ($background);
       z-index: 1;
     }
 
     .dropdown-content a:hover {
-      background-color: #f1f1f1;
+	  background-color: ($color1);
+	  color: ($white);
     }
 
     .dropdown:hover .dropdown-content {
