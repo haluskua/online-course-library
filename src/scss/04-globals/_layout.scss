@@ -2,6 +2,49 @@ main {
   display: flex;
   flex-direction: column;
   width: 100vw;
+  .container {
+    .flex-grid-3-column {
+      display: flex;
+      background: white;
+      justify-content: space-around;
+      background: url("/src/images/compass.jpg") bottom center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      overflow: auto;
+      .left,
+      .center,
+      .right {
+        width: 50%;
+        flex-direction: column;
+        padding: 0.5rem;
+        height: 100%;
+        margin: 5px;
+        background: ($opacityDark);
+        margin: 5px;
+        h2 {
+          padding: 8px;
+          font-size: 1.3rem;
+          width: 100%;
+          font-weight: light;
+          font-family: Megrim, serif;
+          span {
+            font-style: italic;
+            font-size: 1.6rem;
+            font-family: Poppins, sans-serif;
+            padding-left: 8px;
+            font-weight: light;
+          }
+        }
+      }
+      .right {
+        height: 100vh;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
 }
 
 .one-two {
@@ -153,7 +196,7 @@ select {
 /* -----------Map-begins------------------ */
 
 .container {
-  margin-top: 4rem;
+  margin-top: 3rem;
   height: 100%;
   border-top: 1px solid #333c3e;
   position: relative;
@@ -164,10 +207,15 @@ select {
     text-align: center;
     padding: 1rem;
     position: relative;
-    background-color: ($color1);
+    background-color: ($opacityDark);
   }
-
 }
 
-
 /* -----------Map-ends------------------ */
+
+#the-body {
+  padding: 1.1;
+}
+iframe {
+  height: 100vh;
+}
