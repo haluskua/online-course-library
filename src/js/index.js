@@ -158,7 +158,7 @@ function getTodos() {
 
 
 
-function  removeLocalTodos(todo){
+function removeLocalTodos(todo){
     //CHECK --Hey do I already have a thing there?
     let todos;
     if (localStorage.getItem("todos") === null){

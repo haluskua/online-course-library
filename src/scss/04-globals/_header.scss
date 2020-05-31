@@ -5,8 +5,8 @@ header {
     width: 100vw;
     display: flex;
     justify-content: space-between;
-	background: ($color1);
-	// background: @include $primary-color;
+    background: ($color1);
+    // background: @include $primary-color;
     /* background: url(images/matrix.jpg) center top;
 	background-size: cover; */
     align-items: center;
@@ -55,7 +55,7 @@ header {
       display: inline-block;
     }
     .dropdown-content {
-	  perspective: 1000px;
+      perspective: 1000px;
 
       //sass-Anima
       a {
@@ -96,13 +96,13 @@ header {
       position: absolute;
       background-color: ($white);
       min-width: 160px;
-	  background-color: ($background);
+      background-color: ($dark);
       z-index: 1;
     }
 
     .dropdown-content a:hover {
-	  background-color: ($color1);
-	  color: ($white);
+      background-color: ($color1);
+      color: ($white);
     }
 
     .dropdown:hover .dropdown-content {

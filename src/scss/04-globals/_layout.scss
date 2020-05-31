@@ -11,7 +11,8 @@ main {
       background-repeat: no-repeat;
       background-size: cover;
       height: 100vh;
-      overflow: auto;
+      overflow: hidden;
+      overflow-x: hidden;
       .left,
       .center,
       .right {
@@ -42,6 +43,10 @@ main {
         align-items: center;
         display: flex;
         justify-content: center;
+        p{
+          padding: 1rem;
+          overflow: auto;
+        }
       }
     }
   }
@@ -88,8 +93,8 @@ form button:hover {
 
 .todo {
   margin: 0.5rem;
-  background: white;
   color: black;
+  background: white;
   font-size: 1rem;
   display: flex;
   justify-content: space-between;
@@ -196,10 +201,10 @@ select {
 /* -----------Map-begins------------------ */
 
 .container {
-  margin-top: 3rem;
   height: 100%;
   border-top: 1px solid #333c3e;
   position: relative;
+  @include background;
   .section-header {
     font-family: "Megrim", cursive;
     color: #d9ff8a;
@@ -208,6 +213,7 @@ select {
     padding: 1rem;
     position: relative;
     background-color: ($opacityDark);
+    background-color: ($dark);
   }
 }
 
