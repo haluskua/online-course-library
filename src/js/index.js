@@ -6,12 +6,15 @@ const filterOption = document.querySelector(".filter-todo");
 const resetButton = document.querySelector(".clear-all");
 
 
+
 //Event Listeners
+document.addEventListener('DOMContentLoaded', getTodos);
 todoButton.addEventListener("click", addTodo);
 todoList.addEventListener("click", deleteCheck);
 filterOption.addEventListener("click", filterTodo);
-document.addEventListener('DOMContentLoaded', getTodos);
 resetButton.addEventListener('click', resetData);
+
+
 
 //Functions
 //function: resetData
@@ -20,8 +23,6 @@ function resetData(){
     localStorage.clear();
     window.location.reload(); 
 }
-
-
 
 
 function addTodo(event) {
@@ -170,3 +171,7 @@ function removeLocalTodos(todo){
     todos.splice(todos.indexOf(todoIndex), 1);
     localStorage.setItem("todos", JSON.stringify(todos));
 }
+
+
+
+

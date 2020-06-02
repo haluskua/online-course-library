@@ -103,6 +103,10 @@ form button:hover {
 }
 .todo-input {
   padding: 1rem;
+  background: #515b5c73;
+  color: white;
+  letter-spacing: 0.11rem;
+  border: none;
 }
 
 .todo li {
@@ -149,11 +153,15 @@ select {
   appearance: none;
   outline: none;
   border: none;
+  background: #515b5c73;
+  color: white;
+  letter-spacing: 0.03rem;
 }
 .select {
   margin: 1rem;
   position: relative;
   overflow: hidden;
+  
 }
 
 select {
@@ -162,6 +170,7 @@ select {
   cursor: pointer;
   padding: 1rem;
 }
+
 .select::after {
   content: "\25bc";
   position: absolute;
@@ -205,6 +214,9 @@ select {
   border-top: 1px solid #333c3e;
   position: relative;
   @include background;
+  h1 {
+    color: orange;
+  }
   .section-header {
     font-family: "Megrim", cursive;
     color: #d9ff8a;
