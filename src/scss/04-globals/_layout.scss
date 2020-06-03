@@ -43,7 +43,7 @@ main {
         align-items: center;
         display: flex;
         justify-content: center;
-        p{
+        p {
           padding: 1rem;
           overflow: auto;
         }
@@ -161,7 +161,6 @@ select {
   margin: 1rem;
   position: relative;
   overflow: hidden;
-  
 }
 
 select {
@@ -241,11 +240,113 @@ iframe {
   padding: 0.7rem;
   border-radius: 3px;
   border: none;
-
 }
 .toggleFade:hover {
   color: white;
   font-weight: bold;
   background: black;
   cursor: pointer;
+}
+
+// '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+// '''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+// '''''''''''''''''Beats maker .scss'''''''''''''''''
+
+i,
+svg {
+  pointer-events: none;
+}
+
+.kick-pad,
+.snare-pad,
+.hihat-pad {
+  width: 5rem;
+  height: 5rem;
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+}
+
+.kick-pad {
+  background: rgb(160, 211, 224);
+}
+.snare-pad {
+  background: rgb(231, 201, 157);
+}
+.hihat-pad {
+  background: rgb(169, 142, 241);
+}
+.kick-pad-active {
+  background: rgb(65, 175, 209);
+}
+.snare-pad-active {
+  background: rgb(165, 114, 37);
+}
+.hihat-pad-active {
+  background: rgb(77, 48, 156);
+}
+
+.hihat-track,
+.snare-track,
+.kick-track {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  width: 70%;
+  margin-top: 2rem;
+}
+
+.kick,
+.snare,
+.hihat {
+  display: flex;
+}
+
+.sequencer {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  margin: 0rem 2rem;
+}
+
+.controls button {
+  padding: 1rem;
+  border: none;
+  background: rgb(88, 88, 88);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.pad {
+  transition: all 0.5s ease;
+}
+
+
+.play {
+  padding: 1rem 2.2rem;
+  font-size: 1.5rem;
+  background: rgb(27, 206, 107);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 3rem;
+}
+.play:hover{
+  background: yellowgreen;
+}
+
+select {
+  padding: 1rem;
+  font-size: 1rem;
 }
