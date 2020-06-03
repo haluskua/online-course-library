@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Megrim&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <title>Beats App</title>
+    <link rel="stylesheet" href="/dist/prefixed/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="brand">
+          <i class="fas fa-eye"></i>&nbsp;Javascript-course-Notes
+        </div>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="beats.html">Beats maker</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Chapter</a>
+            <div class="dropdown-content">
+              <a class="slide-me" href="#">one</a>
+              <a class="slide-me" href="#">two</a>
+            </div>
+          </li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Home section -->
+      <a name="home"></a>
+      <section class="container">
+        <div class="sequencer">
+
+          <!-- //-------kICK TRACK ------- -->
+          <div class="kick-track">
+            <div class="controls">
+              <h1>Kick</h1>
+              <button data-track="0" class="mute kick-volume">
+                <i class="fa fa-volume-off" aria-hidden="true"></i>
+              </button>
+              <select name="kick-select" id="kick-select">
+                <option value="../src/allSounds/kick-classic.wav"
+                  >Classic Kick</option
+                >
+                <option value="../src/allSounds/kick-808.wav"
+                  >808 Kick</option
+                >
+                <option value="../src/allSounds/kick-heavy.wav"
+                  >Heavy kick</option
+                >
+              </select>
+            </div>
+            <div class="kick">
+                <div class="pad kick-pad b0"></div>
+                <div class="pad kick-pad b1"></div>
+                <div class="pad kick-pad b2"></div>
+                <div class="pad kick-pad b3"></div>
+                <div class="pad kick-pad b4"></div>
+                <div class="pad kick-pad b5"></div>
+                <div class="pad kick-pad b6"></div>
+                <div class="pad kick-pad b7"></div>
+            </div>
+          </div>
+
+          <!-- //-------SNAARE ------- -->
+
+          <div class="snare-track">
+            <div class="controls">
+              <h1>snare</h1>
+              <button data-track="1" class="mute snare-volume">
+                <i class="fa fa-volume-off" aria-hidden="true"></i>
+              </button>
+              <select name="snare-select" id="snare-select">
+                <option value="../src/allSounds/snare-acoustic01.wav"
+                  >Classic snare</option
+                >
+                <option value="../src/allSounds/snare-808.wav"
+                  >808 snare</option
+                >
+                <option value="../src/allSounds/snare-vinyl02.wav"
+                  >Heavy snare</option
+                >
+              </select>
+            </div>
+            <div class="snare">
+                <div class="pad snare-pad b0"></div>
+                <div class="pad snare-pad b1"></div>
+                <div class="pad snare-pad b2"></div>
+                <div class="pad snare-pad b3"></div>
+                <div class="pad snare-pad b4"></div>
+                <div class="pad snare-pad b5"></div>
+                <div class="pad snare-pad b6"></div>
+                <div class="pad snare-pad b7"></div>
+            </div>
+          </div>
+
+           <!-- //-------HIHAT ------- -->
+
+           <div class="hihat-track">
+            <div class="controls">
+              <h1>hihat</h1>
+              <button data-track="2" class="mute hihat-volume">
+                <i class="fa fa-volume-off" aria-hidden="true"></i>
+              </button>
+              <select name="hihat-select" id="hihat-select">
+                <option value="../src/allSounds/hihat-acoustic01.wav"
+                  >Classic hihat</option
+                >
+                <option value="../src/allSounds/hihat-808.wav"
+                  >808 hihat</option
+                >
+              </select>
+            </div>
+            <div class="hihat">
+                <div class="pad hihat-pad b0"></div>
+                <div class="pad hihat-pad b1"></div>
+                <div class="pad hihat-pad b2"></div>
+                <div class="pad hihat-pad b3"></div>
+                <div class="pad hihat-pad b4"></div>
+                <div class="pad hihat-pad b5"></div>
+                <div class="pad hihat-pad b6"></div>
+                <div class="pad hihat-pad b7"></div>
+            </div>
+          </div>
+        </div>
+        <button class="play">Play</button>
+        <audio class="kick-sound" src="./allSounds/kick-classic.wav"></audio>
+        <audio class="snare-sound" src="./allSounds/snare-808.wav"></audio>
+        <audio class="hihat-sound" src="./allSounds/hihat-acoustic01.wav"></audio>
+      </section>
+    </main>
+    <!--JS-->
+    <script src="./js/beats.js"></script>
+  </body>
+</html>
