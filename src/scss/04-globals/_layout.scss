@@ -236,3 +236,16 @@ select {
 iframe {
   height: 100vh;
 }
+
+.toggleFade {
+  padding: 0.7rem;
+  border-radius: 3px;
+  border: none;
+
+}
+.toggleFade:hover {
+  color: white;
+  font-weight: bold;
+  background: black;
+  cursor: pointer;
+}
