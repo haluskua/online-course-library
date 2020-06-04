@@ -208,7 +208,7 @@ select {
 
 /* -----------Map-begins------------------ */
 
-.container {
+.container,.container_beats {
   height: 100%;
   border-top: 1px solid #333c3e;
   position: relative;
@@ -226,6 +226,12 @@ select {
     background-color: ($opacityDark);
     background-color: ($dark);
   }
+}
+
+.container_beats {
+  background: url('/src/images/monkey-beats.jpg') top center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /* -----------Map-ends------------------ */
 
@@ -275,13 +281,13 @@ svg {
 .hihat-pad {
   background: rgb(169, 142, 241);
 }
-.kick-pad-active {
+.kick-pad.active {
   background: rgb(65, 175, 209);
 }
-.snare-pad-active {
+.snare-pad.active {
   background: rgb(165, 114, 37);
 }
-.hihat-pad-active {
+.hihat-pad.active {
   background: rgb(77, 48, 156);
 }
 
@@ -349,4 +355,13 @@ svg {
 select {
   padding: 1rem;
   font-size: 1rem;
+}
+
+@keyframes playTrack{
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
 }
