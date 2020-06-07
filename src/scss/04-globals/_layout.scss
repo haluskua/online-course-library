@@ -208,7 +208,8 @@ select {
 
 /* -----------Map-begins------------------ */
 
-.container,.container_beats {
+.container,
+.container_beats {
   height: 100%;
   border-top: 1px solid #333c3e;
   position: relative;
@@ -229,7 +230,13 @@ select {
 }
 
 .container_beats {
-  background: url('/src/images/monkey-beats.jpg') top center;
+  background: url("/src/images/monkey-beats.jpg") top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container_todo {
+  background: url("/src/images/jeans.jpg") top center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -337,7 +344,6 @@ svg {
   transition: all 0.5s ease;
 }
 
-
 .play {
   padding: 1rem 2.2rem;
   font-size: 1.5rem;
@@ -348,7 +354,7 @@ svg {
   cursor: pointer;
   margin-top: 3rem;
 }
-.play:hover{
+.play:hover {
   background: yellowgreen;
 }
 
@@ -357,12 +363,12 @@ select {
   font-size: 1rem;
 }
 
-.mute.active{
+.mute.active {
   background: rgb(218, 85, 80);
   border: none;
 }
 
-.tempo{
+.tempo {
   margin: 3rem;
   width: 30%;
 }
@@ -375,15 +381,14 @@ select {
   background: rgb(228, 213, 198);
   cursor: pointer;
   border-radius: 5px;
-  p{
+  p {
     font-size: 1.5rem;
     margin: 2rem;
     text-align: center;
   }
 }
 
-
-@keyframes playTrack{
+@keyframes playTrack {
   from {
     transform: scale(1);
   }

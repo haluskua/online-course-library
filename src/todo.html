@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Megrim&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="/dist/prefixed/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="brand">
+          <i class="fas fa-eye"></i>&nbsp;Javascript-course-Notes
+        </div>
+        <ul>
+          <li><a href="index.html">All Files</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Projects:</a>
+            <div class="dropdown-content">
+              <a class="slide-me" href="beats.html">Beats maker</a>
+              <a class="slide-me" href="todo.html">Todo App</a>
+              <a class="slide-me" href="#">Color picker</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- TodoApp section -->
+      <div class="container container_todo">
+        <h1 class="section-header">Todo App</h1>
+        <div class="one-two">
+          <div class="form-container">
+            <div class="left">
+              <h1>Simple Lists application</h1>
+            </div>
+            <form action="">
+              <input type="text" placeholder="Enter-list" class="todo-input" />
+              <button class="todo-button" type="submit">
+                <i class="fas fa-plus-square"></i>
+              </button>
+              <div class="select">
+                <select name="todos" class="filter-todo">
+                  <option value="all">All</option>
+                  <option value="completed">completed</option>
+                  <option value="incompleted">incompleted</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="todo-container">
+            <div class="resetbtn">
+              <button class="clear-all">Clear All</button>
+            </div>
+            <ul class="todo-list"></ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--JS-->
+    <script src="./js/beats.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/arrays.js"></script>
+    <script src="./js/animation.js"></script>
+  </body>
+</html>
