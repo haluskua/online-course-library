@@ -40,7 +40,7 @@ const intro = new Animator(".toggleFade");
 
 const button = document.querySelector(".toggleFade");
 
-button.addEventListener("click", () => {
+button.addEventListener('click', () => {
   intro.move(2, true, {x: 100});
   intro.fadeOut(3, true);
 });

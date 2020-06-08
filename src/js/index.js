@@ -9,9 +9,9 @@ const resetButton = document.querySelector(".clear-all");
 
 //Event Listeners
 document.addEventListener('DOMContentLoaded', getTodos);
-todoButton.addEventListener("click", addTodo);
-todoList.addEventListener("click", deleteCheck);
-filterOption.addEventListener("click", filterTodo);
+todoButton.addEventListener('click', addTodo);
+todoList.addEventListener('click', deleteCheck);
+filterOption.addEventListener('click', filterTodo);
 resetButton.addEventListener('click', resetData);
 
 
