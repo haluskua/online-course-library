@@ -3,7 +3,7 @@
 
 const colorDivs = document.querySelectorAll('.color');
 const generateBtn = document.querySelector('.generate');
-const sliders = document.querySelectorAll('input[typ="range]');
+const sliders = document.querySelectorAll('input[type="range]');
 const currentHexes = document.querySelectorAll('.color h2');
 
 let initialColors;
@@ -33,10 +33,6 @@ function generateHex(){
 
 // [[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]
 
-
-
-
-
 // let randomHex = generateHex();
 // console.log(randomHex);
 //function that generates random colors on divs
@@ -48,6 +44,22 @@ function randomColors(){
        //Add the color to the bg
        div.style.backgroundColor = randomColor;
        hexText.innerText = randomColor;
+       //check for contrast
+       checkTextContrast(randomColor, hexText);
     });
 }
+
+//function for contrast test
+
+function checkTextContrast(color, text){
+    const luminance = chroma(color).luminance();
+    if (luminance > 0.5) {
+        text.style.color = "black";
+
+    }else {
+        text.style.color = "white";
+    }
+}
+
+
 randomColors();
