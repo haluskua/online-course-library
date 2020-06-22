@@ -18,6 +18,7 @@ class DrumKit {
   activePad() {
     this.classList.toggle("active");
   }
+  
   repeat() {
     let step = this.index % 8;
     const activeBars = document.querySelectorAll(`.b${step}`);
@@ -116,6 +117,7 @@ class DrumKit {
     this.bpm = e.target.value;
     tempoText.innerText = e.target.value;
   }
+
   updateTempo(){
     clearInterval(this.isPlaying);
     this.isPlaying = null;
