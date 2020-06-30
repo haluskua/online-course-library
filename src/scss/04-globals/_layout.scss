@@ -8,10 +8,10 @@ main {
       display: flex;
       background: white;
       justify-content: space-around;
+      width: 100%;
       @include background;
       height: 100vh;
-      overflow: hidden;
-      overflow-x: hidden;
+      overflow: auto;
       .left,
       .center,
       .right {
@@ -21,6 +21,12 @@ main {
         height: 100%;
         margin: 5px;
         margin: 5px;
+        h1 {
+          font-family: 'Abril Fatface', cursive;
+          font-size: 3rem;
+          width: 100%;
+          text-align: left;
+        }
         h2 {
           padding: 8px;
           font-size: 1.3rem;
@@ -32,8 +38,19 @@ main {
             font-size: 1.6rem;
             font-family: Poppins, sans-serif;
             padding-left: 8px;
-            font-weight: light;
+            font-weight: lighter;
           }
+        }
+      }
+      .left {
+          background-color: rgba(0,0,0,0.05);
+        p{
+          color: rgb(227, 231, 187);
+          font-size: 1.05rem;
+          line-height: 1.75rem;
+          padding: 1.25rem;
+          font-weight: lighter;
+          border-radius: 4px;
         }
       }
       .right {
@@ -44,6 +61,32 @@ main {
         p {
           padding: 1rem;
           overflow: auto;
+        }
+      }
+      .column {
+        padding: 1rem;
+        background: rgb(12, 1, 1);
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        div{
+          display: flex;
+          flex-wrap: wrap;
+          position: relative;
+          width: 100%;
+          padding: 10px 0;
+          p{
+            font-family: 'Abril Fatface', cursive;
+            font-size: 1.32rem;
+            position: absolute;
+            top: 50%;
+            left: 15%;
+            span {
+              font-family: Poppins, serif;
+              font-size: 1.2rem;
+            }
+          }
         }
       }
     }
@@ -223,7 +266,7 @@ select {
     font-family: 'Abril Fatface', cursive;
     font-size: 2.5rem;
     letter-spacing: 0.02rem;
-    color: #70ee4a;
+    color: #9be784;
     width: 100%;
     text-align: center;
     padding: 1rem;
