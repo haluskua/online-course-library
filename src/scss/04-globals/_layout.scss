@@ -23,9 +23,10 @@ main {
         margin: 5px;
         h1 {
           font-family: 'Abril Fatface', cursive;
-          font-size: 3rem;
+          font-size: 2.23rem;
           width: 100%;
           text-align: left;
+          padding-top: 1rem;
         }
         h2 {
           padding: 8px;
@@ -65,7 +66,7 @@ main {
       }
       .column {
         padding: 1rem;
-        background: rgb(12, 1, 1);
+        background: #e6f2f3;
         overflow-y: scroll;
         display: flex;
         flex-direction: column;
@@ -264,15 +265,15 @@ select {
   }
   .section-header {
     font-family: 'Abril Fatface', cursive;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     letter-spacing: 0.02rem;
-    color: #9be784;
+    color: #e6f2f3;
     width: 100%;
     text-align: center;
     padding: 1rem;
     position: relative;
     background-color: ($opacityDark);
-    background-color: ($dark);
+    background-color: #557e8a;
   }
 }
 
