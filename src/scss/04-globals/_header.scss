@@ -27,7 +27,7 @@ header {
     li a,
     .dropbtn {
       display: inline-block;
-      color: ($white);
+      color: white;
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
@@ -57,12 +57,13 @@ header {
       //sass-Anima
       a {
         background-color: rgb(243, 250, 234);
-        color: ($dark);
+        color: rgb(49, 19, 19);
         padding: 12px 16px;
         text-decoration: none;
         display: block;
         text-align: left;
         opacity: 0;
+
         // running iteration
         @for $i from 1 through 7 {
           &:nth-child(#{$i}) {
@@ -99,7 +100,7 @@ header {
 
     .dropdown-content a:hover {
       background-color: ($color1);
-      color: ($white);
+      color: white;
     }
 
     .dropdown:hover .dropdown-content {

@@ -1,7 +1,7 @@
 
 
 @mixin background {
-    background: repeating-linear-gradient(45deg, #240e0ea9, #110b2279 5px),
-      url(/src/images/wormhole.png) center bottom;
+    background: gradient(45deg, #240e0ea9, #110b2279 5px),
+      url(/src/images/bokeh.jpg) center bottom;
     background-size: cover;
 }
