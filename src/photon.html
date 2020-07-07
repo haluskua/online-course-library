@@ -22,15 +22,17 @@
       integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
       crossorigin="anonymous"
     />
-    <title>Todo App</title>
+    <title>Photon API</title>
     <link rel="stylesheet" href="/dist/prefixed/styles.css" />
   </head>
   <body>
     <header>
       <nav>
         <div class="brand">
-          <i class="fas fa-eye"></i>&nbsp;Javascript-Project
-          <span><i style="color: white; font-size: 0.97rem;">Tod-app</i></span>
+          <i class="fas fa-eye"></i>&nbsp; Learning Javascript
+          <span
+            ><i style="color: white; font-size: 0.97rem;">Home sector </i></span
+          >
         </div>
         <ul>
           <li><a href="index.html">All Files</a></li>
@@ -42,49 +44,32 @@
               <a class="slide-me" href="colors.html">Color picker</a>
               <a class="slide-me" href="async.html">Async</a>
               <a class="slide-me" href="photon.html">Photon</a>
-
             </div>
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <!-- TodoApp section -->
-      <div class="container container_todo">
-        <h1 class="section-header todo-title">Todo App</h1>
-        <div class="one-two">
-          <div class="form-container">
-            <div class="left">
-              <h1>Simple Lists application</h1>
-            </div>
-            <form action="">
-              <input type="text" placeholder="Enter-list" class="todo-input" />
-              <button class="todo-button" type="submit">
-                <i class="fas fa-plus-square"></i>
-              </button>
-              <div class="select">
-                <select name="todos" class="filter-todo">
-                  <option value="all">All</option>
-                  <option value="completed">completed</option>
-                  <option value="incompleted">incompleted</option>
-                </select>
-              </div>
-            </form>
-          </div>
-          <div class="todo-container">
-            <div class="resetbtn">
-              <button class="clear-all">Clear All</button>
-            </div>
-            <ul class="todo-list"></ul>
-          </div>
-        </div>
-      </div>
+      <!-- Home section -->
+      <a name="home"></a>
+      <section class="photon-container container">
+        <h2 class="logo-text"><a id="logo" href="#home">Photon</a></h2>
+        <form  class="search-form" action=""><input type="text" name="search" class="search-input"></input><button type="submit" class="submit-btn">Search</button></form>
+      
+      </section>
+      <section>
+        <div class="gallery"></div>
+      </section>
+
     </main>
-    <!--JS-->
-    <script src="./js/beats.js"></script>
-    <script src="./js/index.js"></script>
+    <div class="nav-button">
+      <button class="more"></button>More>></div>
+
+    <!-- <script src="./js/index.js"></script>
     <script src="./js/arrays.js"></script>
     <script src="./js/animation.js"></script>
     <script src="./js/colors.js"></script>
+    <script src="./js/async.js"></script> -->
+    <script src="./js/photon.js"></script>
   </body>
 </html>

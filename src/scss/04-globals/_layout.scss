@@ -711,6 +711,7 @@ input[type="range"] {
   height: auto;
   line-height: 1.6rem;
   cursor: pointer;
+  justify-content: center;
 }
 .async-result {
   background: orange;
@@ -722,9 +723,46 @@ input[type="range"] {
 #asyncOut {
   color: white;
   font-style: italic;
+  padding: 2rem !important;
+  font-size: 1.2rem;
   
 }
-#asyncOut:hover{
+#apiBtn:hover{
   color: green !important;
-  background: rgb(163, 152, 152) !important;
+  background: rgb(228, 211, 211) !important;
+}
+
+
+
+/////  PHOTON STYLING
+
+.photon-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .logo-text{
+    text-decoration: none;
+    color: black;
+  }
+  .search-form {
+    padding: 2rem;
+    display: flex;
+    width: 50%;
+  }
+  .search-form input{
+    font-size: 2rem;
+    padding: 0.5rem;
+    width: 100%;
+    border: none;
+    border: 2px solid purple
+
+  }
+  .search-form button {
+    border: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background: rgb(52, 23, 90);
+    color: white;
+    cursor: pointer;
+  }
 }
