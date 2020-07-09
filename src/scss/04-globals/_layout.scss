@@ -769,7 +769,62 @@ input[type="range"] {
   }
 }
 .gallery-container {
-  background-color: rgb(200, 211, 53);
   margin: 1rem;
 }
 
+.gallery-info {
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+  padding: 1rem;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+.gallery-info a {
+  color: gray;
+  padding: 1rem;
+}
+
+.nav-button  {
+  color: lightgreen;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  padding: 2rem 0;
+  row-gap: 5rem;
+  grid-gap: 3rem;
+  width: 80%;
+  margin: auto;
+
+}
+
+.gallery-img img {
+  width: 100%;
+  height: 100%;
+  border: 8px solid red;
+  grid-gap: 4px;
+  object-fit: cover;
+  margin-top: 30px;
+}
+
+.nav-button {
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.more {
+  padding: 1rem 3rem;
+  background: rgb(74, 68, 131);
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.more:hover {
+  background: honeydew;
+  color: gray;
+}
