@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" rel="stylesheet">
+  <title>Colors Picker App</title>
+  <link href="/styles.5c8f3eab.css" rel="stylesheet">
+<script src="/async.js"></script></head>
+<body>
+  <header>
+    <nav>
+      <div class="brand">
+        &nbsp;Javascript-Project <span><i style="color: white; font-size: 0.97rem;">color-picker App</i></span>
+      </div>
+      <ul>
+        <li>
+          <a href="/index.html">All Files</a>
+        </li>
+        <li class="dropdown">
+          <a class="dropbtn" href="javascript:void(0)">Projects:</a>
+          <div class="dropdown-content">
+            <a class="slide-me" href="/beats.html">Beats maker</a> <a class="slide-me" href="/todo.html">Todo App</a> <a class="slide-me" href="/colors.html">Color picker</a> <a class="slide-me" href="/async.html">Async</a> <a class="slide-me" href="/photon.html">Photon</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- Colors section -->
+    <div class="container color_picker">
+      <h1 class="section-header color-title">Color Picker App</h1>
+      <div class="colors">
+        <div class="color">
+          <h2>Hex</h2>
+          <div class="controls"></div>
+          <div class="sliders">
+            <button class="close-adjustment">X</button> <span>Hue</span> <input class="hue-input" data-hue="0" max="360" min="0" name="hue" step="1" type="range"> <span>Brightness</span> <input class="bright-input" data-bright="0" max="1" min="0" name="brightness" step="0.01" type="range"> <span>Saturation</span> <input class="sat-input" data-sat="0" max="1" min="0" name="saturation" step="0.01" type="range">
+          </div>
+        </div>
+        <div class="color">
+          <h2>Hex</h2>
+          <div class="controls"></div>
+          <div class="sliders">
+            <button class="close-adjustment">X</button> <span>Hue</span> <input class="hue-input" data-hue="1" max="360" min="0" name="hue" step="1" type="range"> <span>Brightness</span> <input class="bright-input" data-bright="1" max="1" min="0" name="brightness" step="0.01" type="range"> <span>Saturation</span> <input class="sat-input" data-sat="1" max="1" min="0" name="saturation" step="0.01" type="range">
+          </div>
+        </div>
+        <div class="color">
+          <h2>Hex</h2>
+          <div class="controls"></div>
+          <div class="sliders">
+            <button class="close-adjustment">X</button> <span>Hue</span> <input class="hue-input" data-hue="2" max="360" min="0" name="hue" step="1" type="range"> <span>Brightness</span> <input class="bright-input" data-bright="2" max="1" min="0" name="brightness" step="0.01" type="range"> <span>Saturation</span> <input class="sat-input" data-sat="2" max="1" min="0" name="saturation" step="0.01" type="range">
+          </div>
+        </div>
+        <div class="color">
+          <h2>Hex</h2>
+          <div class="controls"></div>
+          <div class="sliders">
+            <button class="close-adjustment">X</button> <span>Hue</span> <input class="hue-input" data-hue="3" max="360" min="0" name="hue" step="1" type="range"> <span>Brightness</span> <input class="bright-input" data-bright="3" max="1" min="0" name="brightness" step="0.01" type="range"> <span>Saturation</span> <input class="sat-input" data-sat="3" max="1" min="0" name="saturation" step="0.01" type="range">
+          </div>
+        </div>
+        <div class="color">
+          <h2>Hex</h2>
+          <div class="controls"></div>
+          <div class="sliders">
+            <button class="close-adjustment">X</button> <span>Hue</span> <input class="hue-input" data-hue="4" max="360" min="0" name="hue" step="1" type="range"> <span>Brightness</span> <input class="bright-input" data-bright="4" max="1" min="0" name="brightness" step="0.01" type="range"> <span>Saturation</span> <input class="sat-input" data-sat="4" max="1" min="0" name="saturation" step="0.01" type="range">
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="library-panel">
+          <p>Library</p>
+        </div>
+        <div class="generate-panel">
+          <p>Generate</p>
+        </div>
+        <div class="save-panel">
+          <p>Save</p>
+        </div>
+      </div>
+      <div class="copy-container">
+        <div class="copy-popup">
+          <h3>Copied to clipboard!</h3>
+          <h4>&#128077;</h4>
+        </div>
+      </div>
+      <div class="save-container">
+        <div class="save-popup">
+          <button class="close-save">X</button>
+          <h4>Give a name to your pallete</h4><input class="save-name" max-length="35" type="text"> <button class="submit-save" type="submit">Save</button>
+        </div>
+      </div>
+      <div class="library-container">
+        <div class="library-popup">
+          <button class="close-library">X</button>
+          <h4>Pick your palette</h4>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script crossorigin="anonymous" integrity="sha256-gX8uuyxN8stSMHWO9arnnKyenTOALaVAcVB3b6P87e4=" src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.0/chroma.min.js"></script> <!--JS-->
+   
+  <script src="/beats.7b59bb28.js"></script> 
+  <script src="/js.00a46daa.js"></script> 
+  <script src="/arrays.c08d2c54.js"></script> 
+  <script src="/animation.e459c265.js"></script> 
+  <script src="/colors.e2215229.js"></script> 
+  <script crossorigin="anonymous" integrity="sha256-+Q/z/qVOexByW1Wpv81lTLvntnZQVYppIL1lBdhtIq0=" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+</body>
+</html>

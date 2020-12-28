@@ -1,239 +1,160 @@
 <!DOCTYPE html>
 <html lang="en-GB">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Megrim&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
-      crossorigin="anonymous"
-    />
-    <title>Todo-list</title>
-    <link rel="stylesheet" href="/dist/prefixed/styles.css" />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="brand">
-          <i class="fas fa-eye"></i>&nbsp; Learning Javascript
-          <span
-            ><i style="color: white; font-size: 0.97rem;">Home sector </i></span
-          >
-        </div>
-        <ul>
-          <li><a href="index.html">All Files</a></li>
-          <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Projects:</a>
-            <div class="dropdown-content">
-              <a class="slide-me" href="beats.html">Beats maker</a>
-              <a class="slide-me" href="todo.html">Todo App</a>
-              <a class="slide-me" href="colors.html">Color picker</a>
-              <a class="slide-me" href="async.html">Async</a>
-              <a class="slide-me" href="photon.html">Photon</a>
-            </div>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <!-- Home section -->
-      <a name="home"></a>
-      <section class="container">
-        <h1 class="section-header">Async Js</h1>
-        <div class="flex-grid-3-column">
-          <div class="left">
-            <h1>Fetching</h1>
-            <h2>From our first:<span>API</span></h2>
-            <p>
-              JSON is a format used for exchanging data between a server and
-              broser irregardless of whatever language we use.
-            </p>
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0"
+        name="viewport">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap"
+        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+        rel="stylesheet">
+  <link crossorigin="anonymous"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+        rel="stylesheet">
+  <title>Todo-list</title>
+  <link href="./scss/styles.scss"
+        rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="brand">
+        &nbsp; Learning Javascript <span><i style="color: white; font-size: 0.97rem;">Home sector</i></span>
+      </div>
+      <ul>
+        <li>
+          <a href="index.html">All Files</a>
+        </li>
+        <li class="dropdown">
+          <a class="dropbtn"
+              href="javascript:void(0)">Projects:</a>
+          <div class="dropdown-content">
+            <a class="slide-me"
+                 href="beats.html">Beats maker</a> <a class="slide-me"
+                 href="todo.html">Todo App</a> <a class="slide-me"
+                 href="colors.html">Color picker</a> <a class="slide-me"
+                 href="async.html">Async</a> <a class="slide-me"
+                 href="photon.html">Photon</a>
           </div>
-          <div class="center">
-            <div class="flex-grid-3-column">
-              <div class="column">
-                <div>
-                  <img src="./images/mountain.jpg" alt="" />
-                  <p>Making API calls<br /><span>//</span></p>
-                </div>
-                <div id="btn-box">
-                  <button id="apiBtn">Assync Call</button>
-                  <h1>https://api.adviceslip.com/advice</h1>
-                </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- Home section -->
+    <a id="home"
+          name="home"></a>
+    <section class="container">
+      <h1 class="section-header">Async Js</h1>
+      <div class="flex-grid-3-column">
+        <div class="left">
+          <h1>Fetching</h1>
+          <h2>From our first:<span>API</span></h2>
+          <p>JSON is a format used for exchanging data between a server and broser irregardless of whatever language we use.</p>
+        </div>
+        <div class="center">
+          <div class="flex-grid-3-column">
+            <div class="column">
+              <div>
+                <!-- <img alt=""
+                     src="./images/mountain.jpg"> -->
+                <p>Making API calls<br>
+                <span>//</span></p>
+              </div>
+              <div id="btn-box">
+                <button id="apiBtn">Assync Call</button>
+                <h1>https://api.adviceslip.com/advice</h1>
               </div>
             </div>
           </div>
-          <div class="right async-result">
-            <h1 id="asyncOut">Result</h1>
-          </div>
         </div>
-      </section>
-
-      <!-- Map=section -->
-      <a name="map"></a>
-      <section class="container">
-        <h1 class="section-header">Arrays and functions</h1>
-        <p
-          class="codepen"
-          data-height="265"
-          data-theme-id="dark"
-          data-default-tab="js,result"
-          data-user="haluskua"
-          data-slug-hash="MWaMVzZ"
-          style="
-            height: 265px;
-            box-sizing: border-box;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 2px solid;
-            margin: 1em 0;
-            padding: 1em;
-          "
-          data-pen-title="Arrays-MAP"
-        >
-          <span
-            >See the Pen
-            <a href="https://codepen.io/haluskua/pen/MWaMVzZ"> Arrays-MAP</a> by
-            omphalus-kua (<a href="https://codepen.io/haluskua">@haluskua</a>)
-            on <a href="https://codepen.io">CodePen</a>.</span
-          >
-          <script
-            async
-            src="https://static.codepen.io/assets/embed/ei.js"
-          ></script>
-        </p>
-      </section>
-
-      <!-- Objects=section -->
-      <a name="objects"></a>
-      <section class="container">
-        <h1 class="section-header">Objects</h1>
-        <p
-          class="codepen"
-          data-height="265"
-          data-theme-id="dark"
-          data-default-tab="html,result"
-          data-user="haluskua"
-          data-slug-hash="KKVPxLE"
-          style="
-            height: 265px;
-            box-sizing: border-box;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 2px solid;
-            margin: 1em 0;
-            padding: 1em;
-          "
-          data-pen-title="Objects"
-        >
-          <span
-            >See the Pen
-            <a href="https://codepen.io/haluskua/pen/KKVPxLE"> Objects</a> by
-            omphalus-kua (<a href="https://codepen.io/haluskua">@haluskua</a>)
-            on <a href="https://codepen.io">CodePen</a>.</span
-          >
-        </p>
-        <script
-          async
-          src="https://static.codepen.io/assets/embed/ei.js"
-        ></script>
-      </section>
-      <!-- Find=section -->
-      <a name="oop"></a>
-      <section class="container">
-        <h1 class="section-header">ANIMATION Library</h1>
-        <div class="flex-grid-3-column">
-          <div class="center">
-            <h2>
-              Object Oriented Programming<span class="swift"
-                >Animation Library</span
-              >
-            </h2>
-            <button class="toggleFade">I fade-out</button>
-            <p>Notes:<br /></p>
-          </div>
+        <div class="right async-result">
+          <h1 id="asyncOut">Result</h1>
         </div>
-      </section>
-      <!-- Misc=section -->
-      <a name="misc"></a>
-      <section class="container">
-        <h1 class="section-header">Miscellaneous</h1>
-        <p
-          class="codepen"
-          data-height="287"
-          data-theme-id="light"
-          data-default-tab="html,result"
-          data-user="haluskua"
-          data-slug-hash="mdVBojw"
-          style="
-            height: 287px;
-            box-sizing: border-box;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 2px solid;
-            margin: 1em 0;
-            padding: 1em;
-          "
-          data-pen-title="Miscellaneous"
-        >
-          <span
-            >See the Pen
-            <a href="https://codepen.io/haluskua/pen/mdVBojw"> Miscellaneous</a>
-            by omphalus-kua (<a href="https://codepen.io/haluskua">@haluskua</a
-            >) on <a href="https://codepen.io">CodePen</a>.</span
-          >
-        </p>
-        <script
-          async
-          src="https://static.codepen.io/assets/embed/ei.js"
-        ></script>
-      </section>
-      <!-- Find=section -->
-      <a name="about"></a>
-      <section class="container">
-        <h1 class="section-header">About Page</h1>
-        <div class="flex-grid-3-column">
-          <div class="left"></div>
-          <div class="center"></div>
-          <div class="right">
-            <h2>online-course<span>Library</span></h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Reprehenderit iste magni numquam nesciunt commodi quia corporis
-              ratione odio facilis veritatis, est, hic temporibus maiores<br />
-              consectetur fuga aspernatur eius doloribus perferendis libero
-              voluptate aliquid. Incidunt itaque eum amet est repudiandaequam
-              accusamus quas nam totam voluptates nulla aspernatur labore
-              expedita, illo repudiandae maiores fugiat deleniti impedit tempore
-              reprehenderit mollitia velit veniam eos similique? Odio velit at
-              unde.
-            </p>
-          </div>
+      </div>
+    </section><!-- Map=section -->
+    <a id="map"
+          name="map"></a>
+    <section class="container">
+      <h1 class="section-header">Arrays and functions</h1>
+      <p class="codepen"
+         data-default-tab="js,result"
+         data-height="265"
+         data-pen-title="Arrays-MAP"
+         data-slug-hash="MWaMVzZ"
+         data-theme-id="dark"
+         data-user="haluskua"
+         style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"><span>See the Pen <a href="https://codepen.io/haluskua/pen/MWaMVzZ">Arrays-MAP</a>
+         by omphalus-kua (<a href="https://codepen.io/haluskua">@haluskua</a>) on <a href="https://codepen.io">CodePen</a>.</span> 
+      <script async
+              src="https://static.codepen.io/assets/embed/ei.js"></script></p>
+    </section><!-- Objects=section -->
+    <a id="objects"
+          name="objects"></a>
+    <section class="container">
+      <h1 class="section-header">Objects</h1>
+      <p class="codepen"
+         data-default-tab="html,result"
+         data-height="265"
+         data-pen-title="Objects"
+         data-slug-hash="KKVPxLE"
+         data-theme-id="dark"
+         data-user="haluskua"
+         style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"><span>See the Pen <a href="https://codepen.io/haluskua/pen/KKVPxLE">Objects</a> by
+         omphalus-kua (<a href="https://codepen.io/haluskua">@haluskua</a>) on <a href="https://codepen.io">CodePen</a>.</span></p>
+      <script async
+               src="https://static.codepen.io/assets/embed/ei.js"></script>
+    </section><!-- Find=section -->
+    <a id="oop"
+          name="oop"></a>
+    <section class="container">
+      <h1 class="section-header">ANIMATION Library</h1>
+      <div class="flex-grid-3-column">
+        <div class="center">
+          <h2>Object Oriented Programming<span class="swift">Animation Library</span></h2><button class="toggleFade">I fade-out</button>
+          <p>Notes:<br></p>
         </div>
-      </section>
-    </main>
-    <!--JS-->
-    <script src="./js/index.js"></script>
-    <script src="./js/arrays.js"></script>
-    <script src="./js/animation.js"></script>
-    <script src="./js/colors.js"></script>
-    <script src="./js/async.js"></script>
-  </body>
+      </div>
+    </section><!-- Misc=section -->
+    <a id="misc"
+          name="misc"></a>
+    <section class="container">
+      <h1 class="section-header">Miscellaneous</h1>
+      <p class="codepen"
+         data-default-tab="html,result"
+         data-height="287"
+         data-pen-title="Miscellaneous"
+         data-slug-hash="mdVBojw"
+         data-theme-id="light"
+         data-user="haluskua"
+         style="height: 287px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"><span>See the Pen <a href=
+         "https://codepen.io/haluskua/pen/mdVBojw">Miscellaneous</a> by omphalus-kua (<a href="https://codepen.io/haluskua">@haluskua</a>) on <a href="https://codepen.io">CodePen</a>.</span></p>
+      <script async
+               src="https://static.codepen.io/assets/embed/ei.js"></script>
+    </section><!-- Find=section -->
+    <a id="about"
+          name="about"></a>
+    <section class="container">
+      <h1 class="section-header">About Page</h1>
+      <div class="flex-grid-3-column">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right">
+          <h2>online-course<span>Library</span></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit iste magni numquam nesciunt commodi quia corporis ratione odio facilis veritatis, est, hic temporibus maiores<br>
+          consectetur fuga aspernatur eius doloribus perferendis libero voluptate aliquid. Incidunt itaque eum amet est repudiandaequam accusamus quas nam totam voluptates nulla aspernatur labore expedita, illo repudiandae maiores fugiat deleniti
+          impedit tempore reprehenderit mollitia velit veniam eos similique? Odio velit at unde.</p>
+        </div>
+      </div>
+    </section>
+  </main><!--JS-->
+  <script src="./js/index.js"></script> 
+  <script src="./js/arrays.js"></script> 
+  <script src="./js/animation.js"></script> 
+  <script src="./js/colors.js"></script> 
+  <script src="./js/async.js"></script>
+</body>
 </html>

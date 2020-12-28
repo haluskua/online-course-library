@@ -1,21 +1,32 @@
 {
-	"name": "parcel-starter",
-	"version": "1.0.0",
-	"main": "src/index.html",
-	"license": "MIT",
-	"scripts": {
-		"start": "parcel src/index.html -p 3000 --open",
+  "name": "parcel-starter",
+  "version": "1.0.0",
+  "main": "src/index.html",
+  "license": "MIT",
+  "scripts": {
+		"start": "parcel serve src/index.html",
 		"build:parcel": "parcel build src/index.html",
-		"build": "npm run clean && npm run build:parceljm",
+		"build": "npm run clean && npm run build:parcel",
 		"clean": "rm -rf dist/*"
 	},
-	"dependencies": {},
-	"devDependencies": {
-		"@babel/core": "^7.6.4",
-		"@babel/preset-env": "^7.6.3",
-		"node-sass": "^4.12.0",
-		"parcel-bundler": "^1.12.4",
-		"parcel-plugin-imagemin": "^3.0.0",
-		"parcel-plugin-svg-sprite": "^1.4.1"
-	}
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "node-sass": "^4.14.1",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-imagemin": "^4.0.2",
+    "parcel-plugin-svg-sprite": "^1.4.1",
+    "sass": "^1.30.0"
+  },
+  "description": "A small project starter kit.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haluskua/online-course-library.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/haluskua/online-course-library/issues"
+  },
+  "homepage": "https://github.com/haluskua/online-course-library#readme"
 }

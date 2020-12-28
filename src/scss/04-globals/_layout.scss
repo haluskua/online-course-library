@@ -9,7 +9,6 @@ main {
       background: white;
       justify-content: space-around;
       width: 100%;
-      @include background;
       height: 100vh;
       overflow: auto;
       .left,
@@ -34,7 +33,7 @@ main {
           width: 100%;
           font-weight: light;
           // font-family: Megrim, serif;
-          color: lawngreen;
+          color: #212918;
           span {
             font-style: italic;
             font-size: 1.6rem;
@@ -260,7 +259,6 @@ select {
   height: 100%;
   border-top: 1px solid #333c3e;
   position: relative;
-  @include background;
   h1 {
     color: orange;
   }
@@ -290,15 +288,17 @@ select {
 }
 
 .container_beats {
-  background: url("/src/images/monkey-beats.jpg") top center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  // background: url("/src/images/milky-way.jpg") top center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  background-color: rgb(224, 224, 224);
 }
 
 .container_todo {
-  background: url("/src/images/jeans.jpg") top center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  // background: url("/src/images/milky-w") top center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  background-color: orange;
 }
 
 /* -----------Map-ends------------------ */
