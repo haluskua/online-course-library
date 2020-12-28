@@ -41,6 +41,8 @@ header {
     .dropdown-content a {
       color: ($red);
       font-weight: bold;
+      margin: 3px;
+
     }
 
     li a:hover,
@@ -95,6 +97,8 @@ header {
       background-color: white;
       min-width: 160px;
       background-color: ($dark);
+      background-color: orange;
+
       z-index: 1;
     }
 

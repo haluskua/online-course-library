@@ -79,7 +79,8 @@ header nav {
     display: none; }
   header nav .dropdown-content a {
     color: red;
-    font-weight: bold; }
+    font-weight: bold;
+    margin: 3px; }
   header nav li a:hover,
   header nav .dropdown:hover .dropbtn {
     background-color: red; }
@@ -192,6 +193,7 @@ header nav {
     background-color: white;
     min-width: 160px;
     background-color: #191d1c;
+    background-color: orange;
     z-index: 1; }
   header nav .dropdown-content a:hover {
     background-color: #557e8a;
@@ -446,8 +448,7 @@ select {
     text-align: center;
     padding: 1rem;
     position: relative;
-    background-color: rgba(8, 6, 20, 0.548);
-    background: #e65100; }
+    background-color: rgba(8, 6, 20, 0.548); }
   .container .todo-title,
   .container .color-title,
   .container .beats-title,
@@ -458,10 +459,7 @@ select {
     font-family: "Abril Fatface", cursive; }
 
 .container_beats {
-  background-color: #e0e0e0; }
-
-.container_todo {
-  background-color: orange; }
+  background: none; }
 
 /* -----------Map-ends------------------ */
 #the-body {

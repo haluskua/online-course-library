@@ -263,7 +263,6 @@ select {
     color: orange;
   }
   .section-header {
-    // font-family: "Abril Fatface", cursive;
     font-family: sans-serif;
     font-size: 2.26rem;
     letter-spacing: 0.02rem;
@@ -273,11 +272,6 @@ select {
     padding: 1rem;
     position: relative;
     background-color: ($opacityDark);
-    // background-color: #557e8a;
-    background: #e65100;
-    // background: repeating-linear-gradient(45deg, #e2dbdb67, #fff0f579 5px),
-    //   url(/src/images/northern-lights.jpg) center bottom;
-    // background-size: cover;
   }
   .todo-title,
   .color-title,
@@ -288,17 +282,7 @@ select {
 }
 
 .container_beats {
-  // background: url("/src/images/milky-way.jpg") top center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  background-color: rgb(224, 224, 224);
-}
-
-.container_todo {
-  // background: url("/src/images/milky-w") top center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  background-color: orange;
+  background: none;
 }
 
 /* -----------Map-ends------------------ */
